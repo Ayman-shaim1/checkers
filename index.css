@@ -1,0 +1,76 @@
+#checkerboard {
+  margin: auto;
+  border: solid #000 5px;
+  padding: 0;
+}
+#checkerboard #checkerboard-tbody td {
+  width: 80px;
+  height: 55px;
+}
+
+#checkerboard #checkerboard-tbody td.eatCell {
+  opacity: 0.5;
+}
+
+#checkerboard #checkerboard-tbody td.white-c {
+  max-width: 150px;
+  background-color: #fff;
+  margin: 0;
+}
+
+#checkerboard #checkerboard-tbody td.brown-c {
+  max-width: 150px;
+  background-color: #8b4513;
+  margin: 0;
+}
+.pawn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+}
+
+.pawn.black-pawn {
+  background-color: #000;
+}
+
+.pawn.white-pawn {
+  background-color: #fff;
+}
+
+.pawn.white-pawn.dame:before {
+  /* font-family: "Font Awesome 5 Free";
+  content: "\f529"; */
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 32%;
+  right: 30%;
+}
+.pawn.black-pawn.dame:before {
+  /* font-family: "Font Awesome 5 Free";
+  content: "\f529"; */
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 32%;
+  right: 30%;
+}
+
+.dr-point {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  margin: auto;
+}
